@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Projects by Rathina Giri: interactive web experiments, games, data visualization, Power BI tools, and learning projects."
+    />
+    <meta name="theme-color" content="#f4efe6" />
+    <title>Rathina Giri | Projects</title>
+    <link rel="preconnect" href="https://api.github.com" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#projects">Skip to projects</a>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Rathina Giri home">
+        <span class="brand-mark">RG</span>
+        <span>Rathina Giri</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="https://github.com/SRathinaGiri" target="_blank" rel="noreferrer">GitHub</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Developer · Analyst · Explorer</p>
+          <h1 id="hero-title">Ideas made <em>interactive.</em></h1>
+          <p class="intro">
+            A collection of practical tools, data experiences, browser games, and visual
+            experiments built to turn curiosity into something you can use.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore projects</a>
+            <a
+              class="button button-secondary"
+              href="https://github.com/SRathinaGiri"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <span class="art-label label-build">BUILD</span>
+          <span class="art-label label-play">PLAY</span>
+          <span class="art-label label-learn">LEARN</span>
+          <span class="art-core">RG</span>
+        </div>
+      </section>
+
+      <section class="project-section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Selected work & experiments</p>
+            <h2 id="projects-title">Project archive</h2>
+          </div>
+          <p class="project-count" id="project-count" aria-live="polite">Loading projects…</p>
+        </div>
+
+        <div class="controls">
+          <label class="search">
+            <span class="sr-only">Search projects</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="m21 21-4.35-4.35m2.35-5.15A7.5 7.5 0 1 1 4 11.5a7.5 7.5 0 0 1 15 0Z" />
+            </svg>
+            <input id="search-input" type="search" placeholder="Search projects…" autocomplete="off" />
+          </label>
+          <label class="sort">
+            <span class="sr-only">Sort projects</span>
+            <select id="sort-select">
+              <option value="featured">Featured first</option>
+              <option value="updated">Recently updated</option>
+              <option value="name">Name A–Z</option>
+              <option value="stars">Most starred</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="filter-list" id="filter-list" aria-label="Filter projects by category"></div>
+
+        <div class="status" id="status">
+          <span class="loader" aria-hidden="true"></span>
+          <span>Fetching public projects from GitHub…</span>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+        <div class="empty-state" id="empty-state" hidden>
+          <strong>No matching projects</strong>
+          <span>Try another search or category.</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Designed and built by Rathina Giri.</p>
+      <p>Project data updates automatically from GitHub.</p>
+    </footer>
+
+    <template id="project-template">
+      <article class="project-card">
+        <div class="card-topline">
+          <span class="category-badge"></span>
+          <span class="featured-badge" hidden>Featured</span>
+        </div>
+        <div>
+          <h3></h3>
+          <p class="description"></p>
+        </div>
+        <div class="topic-list"></div>
+        <div class="card-footer">
+          <div class="repo-meta"></div>
+          <div class="card-links">
+            <a class="icon-link demo-link" target="_blank" rel="noreferrer" aria-label="Open live project">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 5h5v5M19 5l-9 9M19 14v5H5V5h5" />
+              </svg>
+            </a>
+            <a class="icon-link repo-link" target="_blank" rel="noreferrer" aria-label="View source on GitHub">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M8 9 4 12l4 3m8-6 4 3-4 3m-2-8-4 10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </article>
+    </template>
+  </body>
+</html>
