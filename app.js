@@ -62,7 +62,7 @@
       description:
         override.description ||
         repository.description ||
-        "An experimental project exploring ideas through code and interaction.",
+        `A ${repository.language || "software"} project from the public GitHub archive.`,
       displayName: override.title || repository.name.replaceAll("-", " "),
       categories: [...categories],
       featured: config.featured.includes(repository.name),
