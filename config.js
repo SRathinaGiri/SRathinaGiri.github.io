@@ -86,6 +86,11 @@ window.PORTFOLIO_CONFIG = {
         "A physics-based browser puzzle game with generated shapes, moving obstacles, progressive levels, and offline PWA support.",
       categories: ["Games", "Web Apps"],
     },
+    SmartSplit: {
+      description:
+        "A liquid-splitting puzzle game that challenges players to divide quantities accurately.",
+      categories: ["Games", "Web Apps"],
+    },
     StereoMask: {
       description:
         "A Qt and OpenCV precision masking tool for editing, aligning, feathering, and exporting side-by-side stereo images.",
@@ -116,6 +121,11 @@ window.PORTFOLIO_CONFIG = {
         "A live gallery of web applications created by students during the Thirunelveli AURA vibe-coding sessions.",
       categories: ["Learning", "Web Apps"],
     },
+    TrichyAURA: {
+      description:
+        "A showcase of web applications created during the Trichy AURA vibe-coding learning program.",
+      categories: ["Learning", "Web Apps"],
+    },
     ThirukkuralApp: {
       description: "A digital exploration of the timeless Tamil work Thirukkural.",
       categories: ["Tamil & Culture", "Web Apps"],
@@ -123,6 +133,11 @@ window.PORTFOLIO_CONFIG = {
     Unity3DGallery: {
       description:
         "A Unity and OpenXR VR gallery for viewing side-by-side stereoscopic fractal images on Meta Quest devices.",
+      categories: ["3D & Graphics", "Desktop Apps"],
+    },
+    "mb3d-lazarus": {
+      description:
+        "A Lazarus and Free Pascal port of Mandelbulb3D for creating and rendering three-dimensional fractal art.",
       categories: ["3D & Graphics", "Desktop Apps"],
     },
   },
