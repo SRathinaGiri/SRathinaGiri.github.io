@@ -39,6 +39,29 @@
     "C#": "#178600",
   };
 
+  const categoryPriority = [
+    "Data & BI",
+    "Visualization",
+    "Business Tools",
+    "Automation",
+    "AI & Learning",
+    "Learning",
+    "Desktop Apps",
+    "3D & Graphics",
+    "Tamil & Culture",
+    "Web Apps",
+  ];
+
+  function portfolioPriority(project) {
+    // Games always form the final section, even when they also have another category.
+    if (project.categories.includes("Games")) return categoryPriority.length + 1;
+
+    const priorities = project.categories
+      .map((category) => categoryPriority.indexOf(category))
+      .filter((priority) => priority >= 0);
+    return priorities.length ? Math.min(...priorities) : categoryPriority.length;
+  }
+
   function normalizeRepository(repository) {
     const override = config.overrides[repository.name] || {};
     const searchable = [
@@ -144,7 +167,11 @@
       if (state.sort === "name") return a.name.localeCompare(b.name);
       if (state.sort === "stars") return b.stargazers_count - a.stargazers_count;
       if (state.sort === "updated") return new Date(b.updated_at) - new Date(a.updated_at);
-      return Number(b.featured) - Number(a.featured) || new Date(b.updated_at) - new Date(a.updated_at);
+      return (
+        portfolioPriority(a) - portfolioPriority(b) ||
+        Number(b.featured) - Number(a.featured) ||
+        new Date(b.updated_at) - new Date(a.updated_at)
+      );
     });
   }
 
