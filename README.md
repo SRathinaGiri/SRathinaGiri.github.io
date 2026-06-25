@@ -5,6 +5,10 @@ Personal project portfolio for [Rathina Giri](https://github.com/SRathinaGiri).
 The site loads public, non-fork, non-archived repositories from the GitHub API and displays
 them as searchable, categorized project cards.
 
+It also includes a Tamil writing section that links to selected content areas from
+[rathinagiri.in](https://www.rathinagiri.in), so the GitHub Pages site can present both
+software projects and Tamil personal-site content from one landing page.
+
 ## Customize
 
 Edit `config.js` to:
