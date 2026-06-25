@@ -7,10 +7,18 @@
       name="description"
       content="CA S. Rathinagiri combines finance, business intelligence, automation, AI, and application development. Explore his profile and public projects."
     />
-    <meta name="theme-color" content="#f4efe6" />
+    <meta name="theme-color" content="#ffffff" />
     <title>CA S. Rathinagiri | Profile & Projects</title>
     <link rel="icon" href="assets/rathinagiri-profile.jpg" type="image/jpeg" />
     <link rel="preconnect" href="https://api.github.com" />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        if (savedTheme === "dark") {
+          document.documentElement.dataset.theme = "dark";
+        }
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
     <script src="config.js?v=9290b29" defer></script>
     <script src="app.js?v=9290b29" defer></script>
@@ -23,12 +31,22 @@
         <img class="brand-avatar" src="assets/rathinagiri-profile.jpg" alt="" />
         <span>CA S. Rathinagiri</span>
       </a>
-      <nav aria-label="Primary navigation">
-        <a href="#about">About</a>
-        <a href="#tamil">Tamil</a>
-        <a href="#projects">Projects</a>
-        <a href="https://github.com/SRathinaGiri" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
+      <div class="header-actions">
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a>
+          <a href="#tamil">Tamil</a>
+          <a href="#projects">Projects</a>
+          <a href="https://github.com/SRathinaGiri" target="_blank" rel="noreferrer">GitHub</a>
+        </nav>
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 14.4A8.2 8.2 0 0 1 9.6 3 8.8 8.8 0 1 0 21 14.4Z" />
+          </svg>
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4V2m0 20v-2m8-8h2M2 12h2m13.7-5.7 1.4-1.4M4.9 19.1l1.4-1.4m0-11.4L4.9 4.9m14.2 14.2-1.4-1.4M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+          </svg>
+        </button>
+      </div>
     </header>
 
     <main>

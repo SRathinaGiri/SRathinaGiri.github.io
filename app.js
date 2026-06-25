@@ -18,6 +18,7 @@
     search: document.querySelector("#search-input"),
     sort: document.querySelector("#sort-select"),
     template: document.querySelector("#project-template"),
+    themeToggle: document.querySelector(".theme-toggle"),
   };
 
   const categoryRules = [
@@ -51,6 +52,31 @@
     "Tamil & Culture",
     "Web Apps",
   ];
+
+  function setTheme(theme) {
+    const isDark = theme === "dark";
+    document.documentElement.dataset.theme = isDark ? "dark" : "light";
+    document
+      .querySelector('meta[name="theme-color"]')
+      ?.setAttribute("content", isDark ? "#101313" : "#ffffff");
+    elements.themeToggle.setAttribute("aria-pressed", String(isDark));
+    elements.themeToggle.setAttribute(
+      "aria-label",
+      isDark ? "Switch to light mode" : "Switch to dark mode",
+    );
+  }
+
+  function currentTheme() {
+    return document.documentElement.dataset.theme === "dark" ? "dark" : "light";
+  }
+
+  setTheme(currentTheme());
+
+  elements.themeToggle.addEventListener("click", () => {
+    const nextTheme = currentTheme() === "dark" ? "light" : "dark";
+    localStorage.setItem("portfolio-theme", nextTheme);
+    setTheme(nextTheme);
+  });
 
   function portfolioPriority(project) {
     // Games always form the final section, even when they also have another category.

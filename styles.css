@@ -3,13 +3,29 @@
 :root {
   --ink: #19201e;
   --muted: #68706d;
-  --paper: #f4efe6;
-  --card: #fbf8f2;
-  --line: #d8d1c4;
+  --paper: #ffffff;
+  --card: #ffffff;
+  --line: #dde4e4;
   --orange: #e85d2a;
   --teal: #176b67;
   --blue: #295f98;
-  --shadow: 0 18px 45px rgb(25 32 30 / 8%);
+  --field: #f7f9f9;
+  --shadow: 0 18px 45px rgb(25 32 30 / 10%);
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --ink: #f4f7f7;
+  --muted: #aebbbb;
+  --paper: #101313;
+  --card: #171b1b;
+  --line: #2b3434;
+  --orange: #ff8a50;
+  --teal: #73d8cf;
+  --blue: #8ab4f8;
+  --field: #141818;
+  --shadow: 0 18px 45px rgb(0 0 0 / 34%);
+  color-scheme: dark;
 }
 
 * {
@@ -27,11 +43,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background:
-    radial-gradient(circle at 7% 20%, rgb(232 93 42 / 8%), transparent 24rem),
-    linear-gradient(90deg, rgb(25 32 30 / 3%) 1px, transparent 1px),
-    var(--paper);
-  background-size: auto, 72px 72px, auto;
+  background: var(--paper);
   font-family: Manrope, sans-serif;
 }
 
@@ -90,6 +102,12 @@ nav {
   gap: 1.75rem;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 nav a {
   color: var(--muted);
   font-size: 0.9rem;
@@ -98,6 +116,41 @@ nav a {
 
 nav a:hover {
   color: var(--ink);
+}
+
+.theme-toggle {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  flex: 0 0 auto;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--ink);
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  border-color: var(--ink);
+}
+
+.theme-icon {
+  width: 18px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.theme-icon-sun,
+:root[data-theme="dark"] .theme-icon-moon {
+  display: none;
+}
+
+:root[data-theme="dark"] .theme-icon-sun {
+  display: block;
 }
 
 .hero {
@@ -334,7 +387,7 @@ h1 em {
 
 .about-fact,
 .skill-cloud {
-  background: rgb(251 248 242 / 88%);
+  background: var(--card);
 }
 
 .about-fact {
@@ -435,7 +488,7 @@ h2 {
   padding: 1.35rem;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: rgb(251 248 242 / 80%);
+  background: var(--card);
 }
 
 .tamil-card span {
@@ -495,7 +548,7 @@ select {
   border: 1px solid var(--line);
   border-radius: 3px;
   outline: none;
-  background: rgb(251 248 242 / 72%);
+  background: var(--field);
   color: var(--ink);
   font: inherit;
 }
@@ -583,13 +636,13 @@ select:focus {
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: 4px;
-  background: rgb(251 248 242 / 80%);
+  background: var(--card);
   box-shadow: 0 0 0 transparent;
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 }
 
 .project-card:hover {
-  border-color: rgb(25 32 30 / 40%);
+  border-color: var(--ink);
   box-shadow: var(--shadow);
   transform: translateY(-4px);
 }
@@ -770,15 +823,31 @@ footer p {
   }
 
   .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.85rem;
     min-height: 72px;
+    padding: 0.85rem 0;
   }
 
   nav {
+    flex-wrap: wrap;
     gap: 0.8rem;
   }
 
   nav a {
     font-size: 0.78rem;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: space-between;
+    gap: 0.7rem;
+  }
+
+  .theme-toggle {
+    width: 38px;
+    height: 38px;
   }
 
   .hero {
