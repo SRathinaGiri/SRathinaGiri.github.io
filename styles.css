@@ -228,6 +228,11 @@ h1 em {
   box-shadow: 4px 4px 0 var(--orange);
 }
 
+:root[data-theme="dark"] .button-primary {
+  background: #050707;
+  color: white;
+}
+
 .button-secondary {
   background: transparent;
 }
