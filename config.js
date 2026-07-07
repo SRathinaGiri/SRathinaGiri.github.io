@@ -4,6 +4,7 @@ window.PORTFOLIO_CONFIG = {
   // Featured repositories appear first and receive a visual highlight.
   featured: [
     "FAME",
+    "BarRacingImage",
     "PowerBI",
     "IFSAnimator",
     "3D-Fortris",
@@ -47,6 +48,14 @@ window.PORTFOLIO_CONFIG = {
     },
     PowerBI: {
       description: "A collection of Power BI projects, learning resources, and interactive data experiences.",
+      categories: ["Data & BI", "Visualization"],
+    },
+    BarRacingImage: {
+      title: "Bar Racing Image",
+      description:
+        "A Microsoft Store-approved Power BI custom visual for animated bar racing charts with optional category images, play-axis animation, controls, tooltips, and context menus.",
+      homepage:
+        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.barracingimage?tab=Overview",
       categories: ["Data & BI", "Visualization"],
     },
     IFSAnimator: {
