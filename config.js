@@ -5,6 +5,7 @@ window.PORTFOLIO_CONFIG = {
   featured: [
     "FAME",
     "BarRacingImage",
+    "FlowTank",
     "PowerBI",
     "IFSAnimator",
     "3D-Fortris",
@@ -57,6 +58,14 @@ window.PORTFOLIO_CONFIG = {
       homepage:
         "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.barracingimage?tab=Overview",
       categories: ["Data & BI", "Visualization"],
+    },
+    FlowTank: {
+      title: "FlowTank",
+      description:
+        "A Microsoft AppSource-approved Power BI custom visual for comparing inflows, outflows, source/application of funds, and net balance in a tank-style business view.",
+      homepage:
+        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.flowtank?tab=Overview",
+      categories: ["Data & BI", "Visualization", "Business Tools"],
     },
     IFSAnimator: {
       description: "A desktop tool for creating and rendering iterative 3D form animations in mono and stereo.",
