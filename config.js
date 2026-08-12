@@ -18,6 +18,13 @@ window.PORTFOLIO_CONFIG = {
 
   // Optional corrections or richer text for individual repositories.
   overrides: {
+    "3d-spirograph": {
+      title: "3D Spirograph Creator",
+      description:
+        "An interactive Three.js studio for designing, animating, and exporting stereoscopic 3D spirographs with shape-in-shape motion, perfect loops, thick lines, tubes, color themes, and video recording.",
+      homepage: "https://srathinagiri.github.io/3d-spirograph/",
+      categories: ["3D & Graphics", "Web Apps", "Visualization"],
+    },
     "3D-Stereo-Kaleidoscope": {
       description:
         "A browser-based Three.js tool for designing, animating, and exporting stereoscopic 3D kaleidoscopes.",
