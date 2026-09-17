@@ -17,6 +17,460 @@ window.PORTFOLIO_CONFIG = {
   // Add repository names here when they should not appear on the portfolio.
   hidden: ["SRathinaGiri.github.io"],
 
+  // Bundled offline-first repository snapshot to ensure instant rendering without API rate limits.
+  repositories: [
+    {
+        "name": "65536",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-09-17T07:45:00Z",
+        "html_url": "https://github.com/SRathinaGiri/65536",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "StereoFractalMoviePro",
+        "language": "C++",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-09-14T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/StereoFractalMoviePro",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "MB3DLinuxRenderer",
+        "language": "Pascal",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-08-25T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/MB3DLinuxRenderer",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TallyPy",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-08-20T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/TallyPy",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "IndianRummy",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-20T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/IndianRummy",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "KNIME-CaseStudy",
+        "language": null,
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-09-06T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/KNIME-CaseStudy",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "MLDemo",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-08-27T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/MLDemo",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "BeIndian-ExcelAddin",
+        "language": "VBA",
+        "has_pages": false,
+        "stargazers_count": 2,
+        "updated_at": "2026-08-15T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/BeIndian-ExcelAddin",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3d-spirograph",
+        "language": "HTML",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-08-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/3d-spirograph",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Jigsaw",
+        "language": "HTML",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-08-16T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/Jigsaw",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "PowerBI",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 15,
+        "updated_at": "2026-08-07T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/PowerBI",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "FAME",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 1,
+        "updated_at": "2026-07-26T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/FAME",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "FlowTank",
+        "language": "TypeScript",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-07-17T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/FlowTank",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "PowerBIGroupHeaderMatrix",
+        "language": "HTML",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-07-17T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/PowerBIGroupHeaderMatrix",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "BarRacingImage",
+        "language": "TypeScript",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-07-08T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/BarRacingImage",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "IndianCardDonkeyGame",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-21T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/IndianCardDonkeyGame",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "SmartSplit",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/SmartSplit",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TrichyAURA",
+        "language": "HTML",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/TrichyAURA",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "mb3d-lazarus",
+        "language": "Pascal",
+        "has_pages": false,
+        "stargazers_count": 5,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/mb3d-lazarus",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Unity3DGallery",
+        "language": "C#",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/Unity3DGallery",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "ThirunelveliAURA",
+        "language": "HTML",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/ThirunelveliAURA",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TesseractOCR",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/TesseractOCR",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TallyPythonAutomation",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/TallyPythonAutomation",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TallyConnector",
+        "language": "xBase",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/TallyConnector",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "StereoMask",
+        "language": "C++",
+        "has_pages": false,
+        "stargazers_count": 3,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/StereoMask",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "ShapePutter",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/ShapePutter",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "SeleniumRPA",
+        "language": "HTML",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/SeleniumRPA",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "SeleniumGSTExample",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/SeleniumGSTExample",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "PowerBIThemeMaker",
+        "language": "HTML",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/PowerBIThemeMaker",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Interest-ingCalculator",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/Interest-ingCalculator",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "BeIndian1",
+        "language": null,
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/BeIndian1",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "BeIndian",
+        "language": null,
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/BeIndian",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3DMovingStereoVideo",
+        "language": "C++",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/3DMovingStereoVideo",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3D-Stereo-Kaleidoscope",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/3D-Stereo-Kaleidoscope",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "ThirukkuralApp",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 1,
+        "updated_at": "2026-04-27T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/ThirukkuralApp",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "XACT",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-04-03T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/XACT",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "IFSAnimator",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-03-28T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/IFSAnimator",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "DataCube3D",
+        "language": "HTML",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-03-17T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/DataCube3D",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3D-Fortris",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-02-15T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/3D-Fortris",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "ICAI-Journal-Excel",
+        "language": null,
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-01-08T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/ICAI-Journal-Excel",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "ThiruppugazhThedal",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2025-10-23T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/ThiruppugazhThedal",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Fireworks3D",
+        "language": "HTML",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2025-10-19T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/Fireworks3D",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "CircleMagic3D",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2025-10-19T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/CircleMagic3D",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Thayam",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2025-10-05T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/Thayam",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "WordCloud",
+        "language": "HTML",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2025-09-05T10:00:00Z",
+        "html_url": "https://github.com/SRathinaGiri/WordCloud",
+        "fork": false,
+        "archived": false
+    }
+],
+
   // External standalone sites and platforms that should appear in the card showcase.
   sites: [
     {

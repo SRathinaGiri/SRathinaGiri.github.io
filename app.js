@@ -147,24 +147,7 @@
     return `https://${config.username.toLowerCase()}.github.io/${repository.name}/`;
   }
 
-  async function loadProjects() {
-    const endpoint = `https://api.github.com/users/${config.username}/repos?per_page=100&sort=updated`;
-    const cacheKey = `portfolio-repositories:${config.username}`;
-    let repositories;
-
-    try {
-      const response = await fetch(endpoint, {
-        headers: { Accept: "application/vnd.github+json" },
-      });
-      if (!response.ok) throw new Error(`GitHub returned ${response.status}`);
-      repositories = await response.json();
-      localStorage.setItem(cacheKey, JSON.stringify(repositories));
-    } catch (error) {
-      const cached = localStorage.getItem(cacheKey);
-      if (!cached) throw error;
-      repositories = JSON.parse(cached);
-    }
-
+  function applyRepositories(repositories) {
     const repoProjects = repositories
       .filter((repo) => !repo.fork && !repo.archived && !config.hidden.includes(repo.name))
       .map(normalizeRepository);
@@ -172,6 +155,53 @@
     const siteProjects = (config.sites || []).map(normalizeSite);
 
     state.projects = [...siteProjects, ...repoProjects];
+    elements.status.hidden = true;
+    renderFilters();
+    renderProjects();
+  }
+
+  async function loadProjects() {
+    const endpoint = `https://api.github.com/users/${config.username}/repos?per_page=100&sort=updated`;
+    const cacheKey = `portfolio-repositories:${config.username}`;
+
+    // 1. Instant load from localStorage or bundled repository snapshot
+    let initialRepos = null;
+    try {
+      const cached = localStorage.getItem(cacheKey);
+      if (cached) initialRepos = JSON.parse(cached);
+    } catch (e) {}
+
+    if (!initialRepos || !initialRepos.length) {
+      initialRepos = config.repositories || [];
+    }
+
+    if (initialRepos && initialRepos.length) {
+      applyRepositories(initialRepos);
+    }
+
+    // 2. Asynchronous background revalidation from GitHub API
+    try {
+      const response = await fetch(endpoint, {
+        headers: { Accept: "application/vnd.github+json" },
+      });
+      if (response.ok) {
+        const liveRepos = await response.json();
+        if (Array.isArray(liveRepos) && liveRepos.length > 0) {
+          try {
+            localStorage.setItem(cacheKey, JSON.stringify(liveRepos));
+          } catch (e) {}
+          applyRepositories(liveRepos);
+        }
+      } else {
+        console.warn(`GitHub API returned ${response.status} (rate-limited or unavailable). Preserving bundled projects.`);
+      }
+    } catch (error) {
+      console.warn("GitHub live sync unavailable; running in offline/cached mode.", error);
+    }
+
+    if (!state.projects || state.projects.length === 0) {
+      showError(new Error("No projects could be loaded"));
+    }
   }
 
   function renderFilters() {
@@ -313,11 +343,5 @@
     renderProjects();
   });
 
-  loadProjects()
-    .then(() => {
-      elements.status.hidden = true;
-      renderFilters();
-      renderProjects();
-    })
-    .catch(showError);
+  loadProjects();
 })();
