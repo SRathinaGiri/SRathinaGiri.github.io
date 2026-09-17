@@ -22,13 +22,13 @@
   };
 
   const categoryRules = [
-    ["Data & BI", /power.?bi|\bdax\b|chart|data|filter.?context|infograph|analytics|theme/i],
-    ["Games", /game|rummy|thayam|dice|paddle|carrom|tris|fortris|chain.?breaker|color.?match|tubes/i],
-    ["3D & Graphics", /\b3d\b|three\.?js|cube|spiro|kaleido|stereo|vr|firework|circle.?magic|hypercube|animation|word.?cloud/i],
+    ["Data & BI", /power.?bi|\bdax\b|chart|data|filter.?context|infograph|analytics|theme|knime|etl|matrix/i],
+    ["Games", /game|rummy|thayam|dice|paddle|carrom|tris|fortris|chain.?breaker|color.?match|tubes|jigsaw|2048|65536|donkey|bhabhi/i],
+    ["3D & Graphics", /\b3d\b|three\.?js|cube|spiro|kaleido|stereo|vr|firework|circle.?magic|hypercube|animation|word.?cloud|fractal|mandelbulb/i],
     ["Tamil & Culture", /tamil|thirukkural|thiruppugazh|thayam|be.?indian/i],
-    ["Business Tools", /finance|financial|account|audit|loan|calculator|business|productivity|tally|costing|excel|smart.?split/i],
+    ["Business Tools", /finance|financial|account|audit|loan|calculator|business|productivity|tally|costing|excel|smart.?split|sampling/i],
     ["Automation", /automation|selenium|rpa|ocr|connector/i],
-    ["AI & Learning", /\bai\b|machine.?learning|transformer|learning|neural/i],
+    ["AI & Learning", /\bai\b|machine.?learning|transformer|learning|neural|\bml\b/i],
   ];
 
   const languageColors = {
@@ -38,6 +38,11 @@
     CSS: "#563d7c",
     Python: "#3572a5",
     "C#": "#178600",
+    "C++": "#f34b7d",
+    Pascal: "#e3b341",
+    xBase: "#00508f",
+    VBA: "#867db1",
+    DAX: "#e0ac00",
   };
 
   const categoryPriority = [
@@ -92,7 +97,9 @@
     const override = config.overrides[repository.name] || {};
     const searchable = [
       repository.name,
+      override.title,
       repository.description,
+      override.description,
       repository.language,
       ...(repository.topics || []),
     ]
@@ -119,6 +126,22 @@
     };
   }
 
+  function normalizeSite(site) {
+    return {
+      ...site,
+      displayName: site.title || site.name,
+      categories: site.categories || ["Web Apps"],
+      featured: Boolean(site.featured),
+      demoUrl: site.homepage || "",
+      html_url: site.html_url || "",
+      language: site.language || "",
+      topics: site.topics || [],
+      stargazers_count: site.stargazers_count || 0,
+      updated_at: site.updated_at || "2026-09-01T00:00:00Z",
+      isSite: true,
+    };
+  }
+
   function inferPagesUrl(repository) {
     if (!repository.has_pages) return "";
     return `https://${config.username.toLowerCase()}.github.io/${repository.name}/`;
@@ -142,9 +165,13 @@
       repositories = JSON.parse(cached);
     }
 
-    state.projects = repositories
+    const repoProjects = repositories
       .filter((repo) => !repo.fork && !repo.archived && !config.hidden.includes(repo.name))
       .map(normalizeRepository);
+
+    const siteProjects = (config.sites || []).map(normalizeSite);
+
+    state.projects = [...siteProjects, ...repoProjects];
   }
 
   function renderFilters() {
@@ -177,6 +204,7 @@
     const projects = state.projects.filter((project) => {
       const inCategory = state.category === "All" || project.categories.includes(state.category);
       const haystack = [
+        project.displayName,
         project.name,
         project.description,
         project.language,
@@ -190,8 +218,8 @@
     });
 
     return projects.sort((a, b) => {
-      if (state.sort === "name") return a.name.localeCompare(b.name);
-      if (state.sort === "stars") return b.stargazers_count - a.stargazers_count;
+      if (state.sort === "name") return a.displayName.localeCompare(b.displayName);
+      if (state.sort === "stars") return (b.stargazers_count || 0) - (a.stargazers_count || 0);
       if (state.sort === "updated") return new Date(b.updated_at) - new Date(a.updated_at);
       return (
         portfolioPriority(a) - portfolioPriority(b) ||
@@ -245,10 +273,18 @@
     const demoLink = card.querySelector(".demo-link");
     if (project.demoUrl) {
       demoLink.href = project.demoUrl;
+      demoLink.setAttribute("aria-label", `Open ${project.displayName}`);
     } else {
       demoLink.remove();
     }
-    card.querySelector(".repo-link").href = project.html_url;
+
+    const repoLink = card.querySelector(".repo-link");
+    if (project.html_url) {
+      repoLink.href = project.html_url;
+      repoLink.setAttribute("aria-label", `View source for ${project.displayName} on GitHub`);
+    } else {
+      repoLink.remove();
+    }
     return card;
   }
 
