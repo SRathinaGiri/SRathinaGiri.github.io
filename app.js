@@ -23,10 +23,10 @@
 
   const categoryRules = [
     ["Data & BI", /power.?bi|\bdax\b|chart|data|filter.?context|infograph|analytics|theme|knime|etl|matrix/i],
-    ["Games", /game|rummy|thayam|dice|paddle|carrom|tris|fortris|chain.?breaker|color.?match|tubes|jigsaw|2048|65536|donkey|bhabhi/i],
-    ["3D & Graphics", /\b3d\b|three\.?js|cube|spiro|kaleido|stereo|vr|firework|circle.?magic|hypercube|animation|word.?cloud|fractal|mandelbulb/i],
+    ["Games", /game|rummy|thayam|dice|paddle|carrom|tris|fortris|chain.?breaker|color.?match|tubes|jigsaw|2048|65536|donkey|bhabhi|tunnel|labyrinth|maze/i],
+    ["3D & Graphics", /\b3d\b|three\.?js|cube|spiro|kaleido|stereo|vr|firework|circle.?magic|hypercube|animation|word.?cloud|fractal|mandelbulb|stereopi/i],
     ["Tamil & Culture", /tamil|thirukkural|thiruppugazh|thayam|be.?indian/i],
-    ["Business Tools", /finance|financial|account|audit|loan|calculator|business|productivity|tally|costing|excel|smart.?split|sampling/i],
+    ["Business Tools", /finance|financial|account|audit|loan|calculator|business|productivity|tally|costing|excel|smart.?split|sampling|calendar|organizer|pdf|redact/i],
     ["Automation", /automation|selenium|rpa|ocr|connector/i],
     ["AI & Learning", /\bai\b|machine.?learning|transformer|learning|neural|\bml\b/i],
   ];
@@ -40,9 +40,11 @@
     "C#": "#178600",
     "C++": "#f34b7d",
     Pascal: "#e3b341",
+    Rust: "#dea584",
     xBase: "#00508f",
     VBA: "#867db1",
     DAX: "#e0ac00",
+    PowerShell: "#012456",
   };
 
   const categoryPriority = [

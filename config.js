@@ -3,6 +3,8 @@ window.PORTFOLIO_CONFIG = {
 
   // Featured repositories appear first and receive a visual highlight.
   featured: [
+    "3DTunnelRush",
+    "CalendarApp",
     "FAME",
     "BarRacingImage",
     "FlowTank",
@@ -20,11 +22,91 @@ window.PORTFOLIO_CONFIG = {
   // Bundled offline-first repository snapshot to ensure instant rendering without API rate limits.
   repositories: [
     {
+        "name": "CalendarApp",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-10-21T17:24:14Z",
+        "html_url": "https://github.com/SRathinaGiri/CalendarApp",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "stereopi-finder",
+        "language": "PowerShell",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-10-21T16:35:54Z",
+        "html_url": "https://github.com/SRathinaGiri/stereopi-finder",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3DTunnelRush",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 2,
+        "updated_at": "2026-10-21T09:22:11Z",
+        "html_url": "https://github.com/SRathinaGiri/3DTunnelRush",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "3DLabyrinth",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 0,
+        "updated_at": "2026-10-21T02:32:11Z",
+        "html_url": "https://github.com/SRathinaGiri/3DLabyrinth",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "StereoMask",
+        "language": "C++",
+        "has_pages": false,
+        "stargazers_count": 3,
+        "updated_at": "2026-10-20T10:56:19Z",
+        "html_url": "https://github.com/SRathinaGiri/StereoMask",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "PowerBI",
+        "language": "JavaScript",
+        "has_pages": true,
+        "stargazers_count": 16,
+        "updated_at": "2026-10-17T12:28:19Z",
+        "html_url": "https://github.com/SRathinaGiri/PowerBI",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "PDFCraft-IN",
+        "language": "Rust",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-10-15T07:06:35Z",
+        "html_url": "https://github.com/SRathinaGiri/PDFCraft-IN",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "TallyPy",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 1,
+        "updated_at": "2026-10-11T16:37:58Z",
+        "html_url": "https://github.com/SRathinaGiri/TallyPy",
+        "fork": false,
+        "archived": false
+    },
+    {
         "name": "65536",
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-09-17T07:45:00Z",
+        "updated_at": "2026-10-11T09:31:48Z",
         "html_url": "https://github.com/SRathinaGiri/65536",
         "fork": false,
         "archived": false
@@ -33,8 +115,8 @@ window.PORTFOLIO_CONFIG = {
         "name": "StereoFractalMoviePro",
         "language": "C++",
         "has_pages": false,
-        "stargazers_count": 1,
-        "updated_at": "2026-09-14T10:00:00Z",
+        "stargazers_count": 2,
+        "updated_at": "2026-10-07T19:08:31Z",
         "html_url": "https://github.com/SRathinaGiri/StereoFractalMoviePro",
         "fork": false,
         "archived": false
@@ -44,18 +126,8 @@ window.PORTFOLIO_CONFIG = {
         "language": "Pascal",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-08-25T10:00:00Z",
+        "updated_at": "2026-09-14T06:27:05Z",
         "html_url": "https://github.com/SRathinaGiri/MB3DLinuxRenderer",
-        "fork": false,
-        "archived": false
-    },
-    {
-        "name": "TallyPy",
-        "language": "Python",
-        "has_pages": false,
-        "stargazers_count": 0,
-        "updated_at": "2026-08-20T10:00:00Z",
-        "html_url": "https://github.com/SRathinaGiri/TallyPy",
         "fork": false,
         "archived": false
     },
@@ -64,7 +136,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-20T10:00:00Z",
+        "updated_at": "2026-09-01T03:30:00Z",
         "html_url": "https://github.com/SRathinaGiri/IndianRummy",
         "fork": false,
         "archived": false
@@ -74,7 +146,7 @@ window.PORTFOLIO_CONFIG = {
         "language": null,
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-09-06T10:00:00Z",
+        "updated_at": "2026-08-30T02:04:38Z",
         "html_url": "https://github.com/SRathinaGiri/KNIME-CaseStudy",
         "fork": false,
         "archived": false
@@ -84,7 +156,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-08-27T10:00:00Z",
+        "updated_at": "2026-08-25T00:53:25Z",
         "html_url": "https://github.com/SRathinaGiri/MLDemo",
         "fork": false,
         "archived": false
@@ -94,7 +166,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "VBA",
         "has_pages": false,
         "stargazers_count": 2,
-        "updated_at": "2026-08-15T10:00:00Z",
+        "updated_at": "2026-08-16T08:04:47Z",
         "html_url": "https://github.com/SRathinaGiri/BeIndian-ExcelAddin",
         "fork": false,
         "archived": false
@@ -104,7 +176,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-08-12T10:00:00Z",
+        "updated_at": "2026-08-16T05:40:11Z",
         "html_url": "https://github.com/SRathinaGiri/3d-spirograph",
         "fork": false,
         "archived": false
@@ -114,18 +186,8 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-08-16T10:00:00Z",
+        "updated_at": "2026-08-14T09:20:47Z",
         "html_url": "https://github.com/SRathinaGiri/Jigsaw",
-        "fork": false,
-        "archived": false
-    },
-    {
-        "name": "PowerBI",
-        "language": "JavaScript",
-        "has_pages": true,
-        "stargazers_count": 15,
-        "updated_at": "2026-08-07T10:00:00Z",
-        "html_url": "https://github.com/SRathinaGiri/PowerBI",
         "fork": false,
         "archived": false
     },
@@ -134,7 +196,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 1,
-        "updated_at": "2026-07-26T10:00:00Z",
+        "updated_at": "2026-07-26T03:31:14Z",
         "html_url": "https://github.com/SRathinaGiri/FAME",
         "fork": false,
         "archived": false
@@ -144,7 +206,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "TypeScript",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-07-17T10:00:00Z",
+        "updated_at": "2026-07-17T06:02:57Z",
         "html_url": "https://github.com/SRathinaGiri/FlowTank",
         "fork": false,
         "archived": false
@@ -154,7 +216,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-07-17T10:00:00Z",
+        "updated_at": "2026-07-17T06:02:56Z",
         "html_url": "https://github.com/SRathinaGiri/PowerBIGroupHeaderMatrix",
         "fork": false,
         "archived": false
@@ -164,7 +226,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "TypeScript",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-07-08T10:00:00Z",
+        "updated_at": "2026-07-08T12:38:38Z",
         "html_url": "https://github.com/SRathinaGiri/BarRacingImage",
         "fork": false,
         "archived": false
@@ -174,7 +236,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-21T10:00:00Z",
+        "updated_at": "2026-06-21T13:11:19Z",
         "html_url": "https://github.com/SRathinaGiri/IndianCardDonkeyGame",
         "fork": false,
         "archived": false
@@ -184,7 +246,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:24:03Z",
         "html_url": "https://github.com/SRathinaGiri/SmartSplit",
         "fork": false,
         "archived": false
@@ -194,7 +256,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:24:02Z",
         "html_url": "https://github.com/SRathinaGiri/TrichyAURA",
         "fork": false,
         "archived": false
@@ -204,7 +266,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Pascal",
         "has_pages": false,
         "stargazers_count": 5,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:24:01Z",
         "html_url": "https://github.com/SRathinaGiri/mb3d-lazarus",
         "fork": false,
         "archived": false
@@ -214,7 +276,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "C#",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:05:05Z",
         "html_url": "https://github.com/SRathinaGiri/Unity3DGallery",
         "fork": false,
         "archived": false
@@ -224,7 +286,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:05:03Z",
         "html_url": "https://github.com/SRathinaGiri/ThirunelveliAURA",
         "fork": false,
         "archived": false
@@ -234,7 +296,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:05:02Z",
         "html_url": "https://github.com/SRathinaGiri/TesseractOCR",
         "fork": false,
         "archived": false
@@ -244,7 +306,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:05:01Z",
         "html_url": "https://github.com/SRathinaGiri/TallyPythonAutomation",
         "fork": false,
         "archived": false
@@ -254,18 +316,8 @@ window.PORTFOLIO_CONFIG = {
         "language": "xBase",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:57Z",
         "html_url": "https://github.com/SRathinaGiri/TallyConnector",
-        "fork": false,
-        "archived": false
-    },
-    {
-        "name": "StereoMask",
-        "language": "C++",
-        "has_pages": false,
-        "stargazers_count": 3,
-        "updated_at": "2026-06-12T10:00:00Z",
-        "html_url": "https://github.com/SRathinaGiri/StereoMask",
         "fork": false,
         "archived": false
     },
@@ -274,7 +326,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:55Z",
         "html_url": "https://github.com/SRathinaGiri/ShapePutter",
         "fork": false,
         "archived": false
@@ -284,7 +336,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:54Z",
         "html_url": "https://github.com/SRathinaGiri/SeleniumRPA",
         "fork": false,
         "archived": false
@@ -294,7 +346,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:53Z",
         "html_url": "https://github.com/SRathinaGiri/SeleniumGSTExample",
         "fork": false,
         "archived": false
@@ -304,18 +356,8 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:52Z",
         "html_url": "https://github.com/SRathinaGiri/PowerBIThemeMaker",
-        "fork": false,
-        "archived": false
-    },
-    {
-        "name": "Interest-ingCalculator",
-        "language": "Python",
-        "has_pages": false,
-        "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
-        "html_url": "https://github.com/SRathinaGiri/Interest-ingCalculator",
         "fork": false,
         "archived": false
     },
@@ -324,8 +366,18 @@ window.PORTFOLIO_CONFIG = {
         "language": null,
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:50Z",
         "html_url": "https://github.com/SRathinaGiri/BeIndian1",
+        "fork": false,
+        "archived": false
+    },
+    {
+        "name": "Interest-ingCalculator",
+        "language": "Python",
+        "has_pages": false,
+        "stargazers_count": 0,
+        "updated_at": "2026-06-12T04:04:50Z",
+        "html_url": "https://github.com/SRathinaGiri/Interest-ingCalculator",
         "fork": false,
         "archived": false
     },
@@ -334,7 +386,7 @@ window.PORTFOLIO_CONFIG = {
         "language": null,
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:47Z",
         "html_url": "https://github.com/SRathinaGiri/BeIndian",
         "fork": false,
         "archived": false
@@ -344,7 +396,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "C++",
         "has_pages": false,
         "stargazers_count": 1,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:41Z",
         "html_url": "https://github.com/SRathinaGiri/3DMovingStereoVideo",
         "fork": false,
         "archived": false
@@ -354,7 +406,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-06-12T10:00:00Z",
+        "updated_at": "2026-06-12T04:04:39Z",
         "html_url": "https://github.com/SRathinaGiri/3D-Stereo-Kaleidoscope",
         "fork": false,
         "archived": false
@@ -364,7 +416,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 1,
-        "updated_at": "2026-04-27T10:00:00Z",
+        "updated_at": "2026-04-27T19:30:57Z",
         "html_url": "https://github.com/SRathinaGiri/ThirukkuralApp",
         "fork": false,
         "archived": false
@@ -374,7 +426,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-04-03T10:00:00Z",
+        "updated_at": "2026-04-03T23:44:07Z",
         "html_url": "https://github.com/SRathinaGiri/XACT",
         "fork": false,
         "archived": false
@@ -384,7 +436,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "Python",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-03-28T10:00:00Z",
+        "updated_at": "2026-03-28T16:23:43Z",
         "html_url": "https://github.com/SRathinaGiri/IFSAnimator",
         "fork": false,
         "archived": false
@@ -394,7 +446,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-03-17T10:00:00Z",
+        "updated_at": "2026-03-17T13:40:39Z",
         "html_url": "https://github.com/SRathinaGiri/DataCube3D",
         "fork": false,
         "archived": false
@@ -404,7 +456,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2026-02-15T10:00:00Z",
+        "updated_at": "2026-02-15T03:31:02Z",
         "html_url": "https://github.com/SRathinaGiri/3D-Fortris",
         "fork": false,
         "archived": false
@@ -414,7 +466,7 @@ window.PORTFOLIO_CONFIG = {
         "language": null,
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2026-01-08T10:00:00Z",
+        "updated_at": "2026-01-08T13:33:57Z",
         "html_url": "https://github.com/SRathinaGiri/ICAI-Journal-Excel",
         "fork": false,
         "archived": false
@@ -424,7 +476,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2025-10-23T10:00:00Z",
+        "updated_at": "2025-10-23T09:55:13Z",
         "html_url": "https://github.com/SRathinaGiri/ThiruppugazhThedal",
         "fork": false,
         "archived": false
@@ -434,7 +486,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2025-10-19T10:00:00Z",
+        "updated_at": "2025-10-19T13:01:40Z",
         "html_url": "https://github.com/SRathinaGiri/Fireworks3D",
         "fork": false,
         "archived": false
@@ -444,7 +496,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2025-10-19T10:00:00Z",
+        "updated_at": "2025-10-19T06:02:47Z",
         "html_url": "https://github.com/SRathinaGiri/CircleMagic3D",
         "fork": false,
         "archived": false
@@ -454,7 +506,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "JavaScript",
         "has_pages": true,
         "stargazers_count": 0,
-        "updated_at": "2025-10-05T10:00:00Z",
+        "updated_at": "2025-10-05T18:33:53Z",
         "html_url": "https://github.com/SRathinaGiri/Thayam",
         "fork": false,
         "archived": false
@@ -464,7 +516,7 @@ window.PORTFOLIO_CONFIG = {
         "language": "HTML",
         "has_pages": false,
         "stargazers_count": 0,
-        "updated_at": "2025-09-05T10:00:00Z",
+        "updated_at": "2025-09-05T09:31:26Z",
         "html_url": "https://github.com/SRathinaGiri/WordCloud",
         "fork": false,
         "archived": false
@@ -514,6 +566,20 @@ window.PORTFOLIO_CONFIG = {
   // Curated titles, descriptions, categories, and demo links for all repositories.
   overrides: {
     // ----------------- Games & PWA -----------------
+    "3DTunnelRush": {
+      title: "3D Tunnel Rush",
+      description:
+        "A high-speed 3D stereoscopic neon tunnel rush PWA built with Three.js and WebGL, featuring 2D, Parallel, Cross-eye, and Anaglyph 3D modes.",
+      homepage: "https://srathinagiri.github.io/3DTunnelRush/",
+      categories: ["Games", "3D & Graphics", "Web Apps"],
+    },
+    "3DLabyrinth": {
+      title: "3D Labyrinth",
+      description:
+        "A procedural 3D stereoscopic tilt-maze game with gyroscope controls, rolling physics, sliding gates, and multi-mode 3D rendering.",
+      homepage: "https://srathinagiri.github.io/3DLabyrinth/",
+      categories: ["Games", "3D & Graphics", "Web Apps"],
+    },
     "65536": {
       title: "65536 – Reverse 2048",
       description:
@@ -565,56 +631,21 @@ window.PORTFOLIO_CONFIG = {
       categories: ["Games", "Tamil & Culture", "Web Apps"],
     },
 
-    // ----------------- Power BI & Data Analysis -----------------
-    PowerBI: {
-      title: "Power BI Projects & Labs",
-      description:
-        "A flagship collection of Power BI custom visuals, DAX learning labs, interactive infographics, and Power Query tutorials.",
-      categories: ["Data & BI", "Visualization"],
-    },
-    BarRacingImage: {
-      title: "Bar Racing Image",
-      description:
-        "A Microsoft Store-approved Power BI custom visual for animated bar racing charts with optional category images, play-axis animation, controls, tooltips, and context menus.",
-      homepage:
-        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.barracingimage?tab=Overview",
-      categories: ["Data & BI", "Visualization"],
-    },
-    FlowTank: {
-      title: "FlowTank",
-      description:
-        "A Microsoft AppSource-approved Power BI custom visual for comparing inflows, outflows, source/application of funds, and net balance in a tank-style business view.",
-      homepage:
-        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.flowtank?tab=Overview",
-      categories: ["Data & BI", "Visualization", "Business Tools"],
-    },
-    DataCube3D: {
-      title: "Data Cube 3D",
-      description:
-        "A 3D Microsoft Power BI custom visual for exploring multidimensional data with interactive slicing, dicing, and drill-down cube animations.",
-      homepage: "https://marketplace.microsoft.com/en-us/product/rathinagiri.datacube?tab=Overview",
-      categories: ["Data & BI", "Visualization", "3D & Graphics"],
-    },
-    PowerBIGroupHeaderMatrix: {
-      title: "Grouped Header Matrix",
-      description:
-        "A Power BI custom visual providing multi-level grouped column headers and flexible matrix grid layouts for financial reporting.",
-      categories: ["Data & BI", "Visualization", "Business Tools"],
-    },
-    PowerBIThemeMaker: {
-      title: "Power BI Theme Maker",
-      description:
-        "A browser-based visual editor for creating, previewing, validating, and exporting Power BI JSON themes.",
-      categories: ["Data & BI", "Business Tools"],
-    },
-    "KNIME-CaseStudy": {
-      title: "KNIME ETL Case Study",
-      description:
-        "A practical KNIME ETL case study demonstrating automated transformation of raw Form 26AS tax statements into structured audit tables and reports.",
-      categories: ["Business Tools", "Data & BI"],
-    },
-
     // ----------------- Business & Financial Tools -----------------
+    CalendarApp: {
+      title: "Calendar App (Offline PWA)",
+      description:
+        "A standalone, local-first personal calendar and daily organizer PWA powered by client-side SQLite WASM, IndexedDB, and AES-256-GCM encryption at rest.",
+      homepage: "https://srathinagiri.github.io/CalendarApp/",
+      categories: ["Business Tools", "Web Apps"],
+    },
+    "PDFCraft-IN": {
+      title: "PDFCraft-IN",
+      description:
+        "A privacy-first desktop document redaction tool in Rust tailored for India, automatically detecting PAN, Aadhaar, GSTIN, UPI, and financial identifiers.",
+      homepage: "https://github.com/SRathinaGiri/PDFCraft-IN",
+      categories: ["Business Tools", "Desktop Apps"],
+    },
     FAME: {
       title: "FAME Financial Accounting",
       description:
@@ -675,6 +706,55 @@ window.PORTFOLIO_CONFIG = {
         "A structured product costing and financial scenario analysis system powered by a Python FastAPI backend and a modern web interface.",
       categories: ["Business Tools", "Web Apps"],
     },
+    "KNIME-CaseStudy": {
+      title: "KNIME ETL Case Study",
+      description:
+        "A practical KNIME ETL case study demonstrating automated transformation of raw Form 26AS tax statements into structured audit tables and reports.",
+      categories: ["Business Tools", "Data & BI"],
+    },
+
+    // ----------------- Power BI & Data Analysis -----------------
+    PowerBI: {
+      title: "Power BI Projects & Labs",
+      description:
+        "A flagship collection of Power BI custom visuals, DAX learning labs, interactive infographics, and Power Query tutorials.",
+      categories: ["Data & BI", "Visualization"],
+    },
+    BarRacingImage: {
+      title: "Bar Racing Image",
+      description:
+        "A Microsoft Store-approved Power BI custom visual for animated bar racing charts with optional category images, play-axis animation, controls, tooltips, and context menus.",
+      homepage:
+        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.barracingimage?tab=Overview",
+      categories: ["Data & BI", "Visualization"],
+    },
+    FlowTank: {
+      title: "FlowTank",
+      description:
+        "A Microsoft AppSource-approved Power BI custom visual for comparing inflows, outflows, source/application of funds, and net balance in a tank-style business view.",
+      homepage:
+        "https://marketplace.microsoft.com/en-us/product/power-bi-visuals/rathinagiri.flowtank?tab=Overview",
+      categories: ["Data & BI", "Visualization", "Business Tools"],
+    },
+    DataCube3D: {
+      title: "Data Cube 3D",
+      description:
+        "A 3D Microsoft Power BI custom visual for exploring multidimensional data with interactive slicing, dicing, and drill-down cube animations.",
+      homepage: "https://marketplace.microsoft.com/en-us/product/rathinagiri.datacube?tab=Overview",
+      categories: ["Data & BI", "Visualization", "3D & Graphics"],
+    },
+    PowerBIGroupHeaderMatrix: {
+      title: "Grouped Header Matrix",
+      description:
+        "A Power BI custom visual providing multi-level grouped column headers and flexible matrix grid layouts for financial reporting.",
+      categories: ["Data & BI", "Visualization", "Business Tools"],
+    },
+    PowerBIThemeMaker: {
+      title: "Power BI Theme Maker",
+      description:
+        "A browser-based visual editor for creating, previewing, validating, and exporting Power BI JSON themes.",
+      categories: ["Data & BI", "Business Tools"],
+    },
 
     // ----------------- Automation & Desktop Tools -----------------
     SeleniumGSTExample: {
@@ -717,6 +797,13 @@ window.PORTFOLIO_CONFIG = {
     },
 
     // ----------------- 3D & Graphics -----------------
+    "stereopi-finder": {
+      title: "StereoPi Finder (Android)",
+      description:
+        "An Android application that discovers a StereoPi camera system on a phone hotspot or local network and launches its stereoscopic web interface.",
+      homepage: "https://github.com/SRathinaGiri/stereopi-finder/releases",
+      categories: ["3D & Graphics", "Desktop Apps"],
+    },
     "3d-spirograph": {
       title: "3D Spirograph Creator",
       description:
