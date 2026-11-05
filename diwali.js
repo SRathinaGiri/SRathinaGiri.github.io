@@ -19,7 +19,7 @@
         blurb:
           "A private, offline-first calendar and daily organiser. Your data stays on your device, encrypted at rest.",
         play: null,
-        download: "https://github.com/SRathinaGiri/CalendarApp/releases/latest",
+        download: "https://github.com/SRathinaGiri/CalendarApp/releases",
         repo: "https://github.com/SRathinaGiri/CalendarApp",
       },
       {
