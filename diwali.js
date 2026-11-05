@@ -40,7 +40,7 @@
         kind: "3D puzzle · Stereoscopic",
         blurb:
           "Falling blocks in a true 3D well. Play in 2D, or in cross-eye and parallel stereo 3D.",
-        play: null,
+        play: "https://srathinagiri.github.io/3D-Fortris/",
         download: null,
         repo: "https://github.com/SRathinaGiri/3D-Fortris",
       },
@@ -84,7 +84,7 @@
         kind: "Physics puzzle",
         blurb:
           "Putt generated shapes past moving obstacles across progressive levels.",
-        play: null,
+        play: "https://srathinagiri.github.io/ShapePutter/",
         download: null,
         repo: "https://github.com/SRathinaGiri/ShapePutter",
       },
