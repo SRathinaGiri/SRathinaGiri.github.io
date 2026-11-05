@@ -1,0 +1,317 @@
+/* Diwali Mega Gift Week 2026 — self-contained band; safe to delete after the week. */
+
+.gift-week {
+  --gw-night: #1d0f2e;
+  --gw-night-2: #3a1238;
+  --gw-gold: #f5b942;
+  --gw-gold-soft: #ffd98a;
+  --gw-flame: #ff7a2f;
+  --gw-text: #fff6e8;
+  --gw-muted: #e6cfb8;
+  --gw-card: rgb(255 255 255 / 7%);
+  --gw-line: rgb(245 185 66 / 28%);
+
+  position: relative;
+  margin: 3.5rem 0 1rem;
+  padding: clamp(1.75rem, 4vw, 3.25rem);
+  overflow: hidden;
+  border-radius: 28px;
+  color: var(--gw-text);
+  background:
+    radial-gradient(60% 80% at 85% 0%, rgb(255 122 47 / 28%), transparent 60%),
+    radial-gradient(50% 70% at 0% 100%, rgb(245 185 66 / 18%), transparent 60%),
+    linear-gradient(135deg, var(--gw-night), var(--gw-night-2));
+  box-shadow: var(--shadow);
+  isolation: isolate;
+}
+
+/* A drift of tiny lamp-light sparks. */
+.gift-week::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    radial-gradient(2px 2px at 12% 22%, var(--gw-gold-soft), transparent),
+    radial-gradient(1.5px 1.5px at 32% 68%, var(--gw-gold), transparent),
+    radial-gradient(2px 2px at 58% 18%, var(--gw-gold-soft), transparent),
+    radial-gradient(1.5px 1.5px at 76% 58%, var(--gw-flame), transparent),
+    radial-gradient(2px 2px at 92% 32%, var(--gw-gold-soft), transparent),
+    radial-gradient(1.5px 1.5px at 46% 88%, var(--gw-gold), transparent);
+  opacity: 0.8;
+}
+
+.gift-week-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem 2rem;
+  margin-bottom: 1.75rem;
+}
+
+.gift-week .eyebrow {
+  color: var(--gw-gold);
+}
+
+.gift-week h2 {
+  margin: 0.35rem 0 0.6rem;
+  font-size: clamp(2rem, 4.5vw, 3.2rem);
+  line-height: 1.05;
+}
+
+.gift-week h2 em {
+  color: var(--gw-gold);
+  font-family: "Playfair Display", serif;
+}
+
+.gift-week-intro {
+  max-width: 58ch;
+  margin: 0;
+  color: var(--gw-muted);
+  line-height: 1.6;
+}
+
+.gift-week-status {
+  margin: 0;
+  padding: 0.55rem 0.95rem;
+  border: 1px solid var(--gw-line);
+  border-radius: 999px;
+  color: var(--gw-gold-soft);
+  font-family: "DM Mono", monospace;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.gift-week-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.gift-card {
+  position: relative;
+  display: flex;
+  min-height: 250px;
+  flex-direction: column;
+  padding: 1.15rem;
+  border: 1px solid var(--gw-line);
+  border-radius: 18px;
+  background: var(--gw-card);
+  backdrop-filter: blur(2px);
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.gift-card.is-open:hover {
+  transform: translateY(-3px);
+  border-color: var(--gw-gold);
+}
+
+.gift-card.is-today {
+  border-color: var(--gw-gold);
+  box-shadow: 0 0 0 1px var(--gw-gold), 0 0 32px rgb(245 185 66 / 35%);
+}
+
+.gift-card.is-today::after {
+  content: "Today's gift";
+  position: absolute;
+  top: -0.7rem;
+  right: 1rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: var(--gw-gold);
+  color: var(--gw-night);
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.gift-top {
+  display: flex;
+  justify-content: space-between;
+  font-family: "DM Mono", monospace;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.gift-day {
+  color: var(--gw-gold);
+}
+
+.gift-date {
+  color: var(--gw-muted);
+}
+
+.gift-festival {
+  margin: 0.35rem 0 0.9rem;
+  color: var(--gw-muted);
+  font-size: 0.82rem;
+}
+
+.gift-card h3 {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.gift-kind {
+  margin: 0.25rem 0 0.7rem;
+  color: var(--gw-gold-soft);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.gift-blurb {
+  flex: 1;
+  margin: 0 0 1rem;
+  color: var(--gw-text);
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.gift-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.gift-btn {
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--gw-line);
+  border-radius: 999px;
+  color: var(--gw-text);
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.gift-btn:hover {
+  border-color: var(--gw-gold);
+}
+
+.gift-btn-primary {
+  border-color: var(--gw-gold);
+  background: var(--gw-gold);
+  color: var(--gw-night);
+}
+
+.gift-btn-primary:hover {
+  background: var(--gw-gold-soft);
+}
+
+.gift-btn:focus-visible {
+  outline: 2px solid var(--gw-gold-soft);
+  outline-offset: 2px;
+}
+
+/* Wrapped gift box. */
+.gift-box {
+  position: relative;
+  width: 96px;
+  height: 84px;
+  margin: 0.4rem auto 1.1rem;
+  border-radius: 10px;
+  background: linear-gradient(160deg, #c2410c, #7c1d3a);
+  box-shadow: inset 0 -10px 0 rgb(0 0 0 / 18%);
+  animation: gift-wiggle 4s ease-in-out infinite;
+}
+
+.gift-card:nth-child(2n) .gift-box {
+  background: linear-gradient(160deg, #6d28d9, #3b0d5c);
+  animation-delay: 0.6s;
+}
+
+.gift-card:nth-child(3n) .gift-box {
+  background: linear-gradient(160deg, #0f766e, #134e4a);
+  animation-delay: 1.2s;
+}
+
+.gift-ribbon-v,
+.gift-ribbon-h {
+  position: absolute;
+  background: var(--gw-gold);
+}
+
+.gift-ribbon-v {
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 14px;
+  transform: translateX(-50%);
+}
+
+.gift-ribbon-h {
+  top: 22px;
+  right: 0;
+  left: 0;
+  height: 12px;
+}
+
+.gift-bow {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  width: 36px;
+  height: 20px;
+  transform: translateX(-50%);
+}
+
+.gift-bow::before,
+.gift-bow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  border: 4px solid var(--gw-gold);
+  border-radius: 50% 50% 0 50%;
+}
+
+.gift-bow::before {
+  left: 0;
+  transform: rotate(-20deg);
+}
+
+.gift-bow::after {
+  right: 0;
+  transform: scaleX(-1) rotate(-20deg);
+}
+
+.gift-when {
+  margin: auto 0 0;
+  color: var(--gw-gold-soft);
+  font-family: "DM Mono", monospace;
+  font-size: 0.78rem;
+  text-align: center;
+}
+
+@keyframes gift-wiggle {
+  0%, 88%, 100% { transform: rotate(0); }
+  91% { transform: rotate(-4deg); }
+  94% { transform: rotate(4deg); }
+  97% { transform: rotate(-2deg); }
+}
+
+@media (max-width: 620px) {
+  .gift-week {
+    margin-top: 2.25rem;
+    border-radius: 20px;
+  }
+
+  .gift-week-status {
+    white-space: normal;
+  }
+
+  .gift-card {
+    min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .gift-box {
+    animation: none;
+  }
+
+  .gift-card {
+    transition: none;
+  }
+}
