@@ -54,6 +54,7 @@
           "Financial Accounting under Modern Environment. Open fresh books this new year, stored in an encrypted file on your own device.",
         play: null,
         download: "https://github.com/SRathinaGiri/FAME/releases",
+        guide: "https://github.com/SRathinaGiri/FAME/blob/main/docs/FAME-User-Manual.pdf",
         repo: "https://github.com/SRathinaGiri/FAME",
       },
       {
