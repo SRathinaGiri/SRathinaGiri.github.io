@@ -20,6 +20,7 @@
           "A private, offline-first calendar and daily organiser. Your data stays on your device, encrypted at rest.",
         play: null,
         download: "https://github.com/SRathinaGiri/CalendarApp/releases",
+        guide: "https://github.com/SRathinaGiri/CalendarApp/blob/main/docs/USER_GUIDE.md",
         repo: "https://github.com/SRathinaGiri/CalendarApp",
       },
       {
@@ -176,6 +177,7 @@
         actions.className = "gift-actions";
         if (gift.play) actions.appendChild(link(gift.play, "Play now", "gift-btn gift-btn-primary"));
         if (gift.download) actions.appendChild(link(gift.download, "Download", "gift-btn gift-btn-primary"));
+        if (gift.guide) actions.appendChild(link(gift.guide, "📖 Guide", "gift-btn"));
         actions.appendChild(link(gift.repo, "Source", "gift-btn"));
         card.append(h, kind, blurb, actions);
       } else {
